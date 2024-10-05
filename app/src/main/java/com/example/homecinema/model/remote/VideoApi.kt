@@ -8,7 +8,7 @@ interface VideoApi {
 
     @GET("videos?urls=true")
     suspend fun getVideos(
-        @Query("api_key") apiKey: String = "e484dbe9c9d328e7dd18a6b1a202cb29"
+        @Query("api_key") apiKey: String = ""
     ): VideoListResponse
 }
 
